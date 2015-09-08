@@ -1,43 +1,68 @@
 <!DOCTYPE html>
 <html ng-app="myBlog">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <meta charset="utf-8">
+   <meta name="viewport" content ="width=device-width, initial-scale=1">
+   <meta name="robots" content = "follow,index"/>
+   <meta name="Languege" content = "Turkish"/>
+   <meta name="Keywords" content = "developer,sailor,jolla,linux,mobil,teknoloji,programlama,webteknolojileri"/>
+   <meta name="Title" content="Developer Sailor'ün">
+   <meta name="description" content = "Açıklama"/>
 
-        
-        <!--LOCAL LIBRARY-->
-        <!--AngularJS MODULES-->
-        <script type="text/javascript" src="angular-1.4.3/angular.js"></script>
-        
-        <!--Bootstrap CSS-->
-        <link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/css/bootstrap.css">
+   <title>doAngular • todoApp</title>
+       <!--Angular-->
+       <script src="angular-1.4.4/angular.min.js"></script>
+       <script src="jquery-2.1.1/jquery.min.js"></script>
+       <script src="js/app.js"></script>
 
-        <!--my mainApp-->
-        <script type="text/javascript" src="js/app.js"></script>
-
-  <nav class="navbar navbar-default">
-
-      <div class="container-fluid">
-            <div style="border-style:none;">
-              <ul class="nav navbar-nav">
-               <!--Başlık-->
-            <li class="active"><a href="index.html">Developer Sailor</a></li>
-              
-                <li><a href="projelerim.html">Projelerim</a></li>
-                <li><a href="LinuxDeneyimlerim.html">Linux Deneyimlerim</a></li>
-                <li><a href="mobil.html">Mobil</a></li>  
-                <li><a href="Macera.html">Macera</a></li>
-                <li><a href="Hakkımda.html">Hakkımda</a></li>
-              </ul>
-          </div>
-
-      </div>
-       
-    </nav>  
-
-
+       <!--favicon-->
+       <link rel="shortcut icon" href="fav-icon.ico">
+       <!-- Bootstrap -->
+       <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+       <!--[if lt IE 9]>
+         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+       <![endif]-->
   </head>
 
- <body ng-controller="BlogController">
+ <body>
+    <!--main*div-->
+    <div>
+      <!--menü-->
+      <nav class="navbar navbar-default">
+          <div class="container-fluid">
+                <div style="border-style:none;">
+                  <ul class="nav navbar-nav">
+                      <!--Başlık-->
+                      <li class="active"><a href="index.html">Developer Sailor</a></li>
+                      <li><a href="projelerim.html">Projelerim</a></li>
+                      <li><a href="LinuxDeneyimlerim.html">Linux Deneyimlerim</a></li>
+                      <li><a href="mobil.html">Mobil</a></li>
+                      <li><a href="Macera.html">Macera</a></li>
+                      <li><a href="Hakkımda.html">Hakkımda</a></li>
+                  </ul>
+              </div>
+          </div>
+        </nav>
+<!--Başlık-->
+        <div class="jumbotron">
+          <h1>Developer Sailor</h1>
+        </div>
+        <div class="row" ng-controller="BlogController as blogCtrl">
+              <div class="col-md-8">
+                <p>
+                  paragraf div kısmı
+                </p>
+              </div>
+              <div class="col-md-3">
+                <h3>Belirsiz div</h3>
+              </div>
+        </div>
+    </div>
+
+
 
   </body>
 

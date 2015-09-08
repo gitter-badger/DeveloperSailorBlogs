@@ -1,5 +1,10 @@
-var blog = angular.modules("myBlog",[]);
+'use strict';
 
-blog.controller("BlogController",function ($scope) {
-	
-});
+(function(){
+	var app = angular.module('myBlog', []);
+
+	app.controller('BlogController',['$scope',function($scope) {
+
+	}]);//BlogController
+
+})();//angularModule
