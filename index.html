@@ -6,19 +6,20 @@
    <meta name="robots" content = "follow,index"/>
    <meta name="Languege" content = "Turkish"/>
    <meta name="Keywords" content = "developer,sailor,jolla,linux,mobil,teknoloji,programlama,webteknolojileri"/>
-   <meta name="Title" content="Developer Sailor'ün">
+   <meta name="Title" content="Developer Sailor'ün Blog Sayfası">
    <meta name="description" content = "Açıklama"/>
 
    <title>doAngular • todoApp</title>
        <!--Angular-->
-       <script src="angular-1.4.4/angular.min.js"></script>
-       <script src="jquery-2.1.1/jquery.min.js"></script>
+       <script src="angular/angular.min.js"></script>
+       <script src="jquery/jquery.min.js"></script>
        <script src="js/app.js"></script>
 
        <!--favicon-->
        <link rel="shortcut icon" href="fav-icon.ico">
        <!-- Bootstrap -->
-       <link href="bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
+       <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+       <link href="bootstrap/css/bootstrap-theme.min.css"
        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
        <!--[if lt IE 9]>
@@ -27,7 +28,7 @@
        <![endif]-->
   </head>
 
- <body>
+ <body ng-controller="BlogController">
     <!--main*div-->
     <div>
       <!--menü-->
@@ -52,9 +53,7 @@
         </div>
         <div class="row" ng-controller="BlogController as blogCtrl">
               <div class="col-md-8">
-                <p>
-                  paragraf div kısmı
-                </p>
+                divasdasdsada
               </div>
               <div class="col-md-3">
                 <h3>Belirsiz div</h3>
